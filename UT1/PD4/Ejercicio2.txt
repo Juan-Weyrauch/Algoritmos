@@ -1,0 +1,30 @@
+1) ¿Qué está mal en el código?
+El problema principal en el código es que la variable myRect se declara, pero nunca se inicializa antes de usarla.
+Tambien, el código intenta llamar a myRect.area(), pero la clase Rectangle no está definida en el código.
+
+Codigo corregido:
+// Definimos la clase Rectangle
+class Rectangle {
+    int width;
+    int height;
+
+    // Método para calcular el área
+    int area() {
+        return width * height;
+    }
+}
+
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+        // Inicializamos la variable antes de usarla
+        Rectangle myRect = new Rectangle();
+        myRect.width = 40;
+        myRect.height = 50;
+
+        // Imprimimos el área
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+
+Salida:
+myRect's area is 2000

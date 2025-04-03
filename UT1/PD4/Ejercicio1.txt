@@ -1,0 +1,21 @@
+a) ¿Cuáles son las variables de clase?
+Las variables de clase son aquellas declaradas con el modificador static, lo que significa que pertenecen a la clase en sí y no a instancias individuales. En este caso:
+
+public static int x = 7;
+
+La variable x es una variable de clase porque está declarada con static.
+
+b) ¿Cuáles son las variables de instancia?
+Las variables de instancia pertenecen a cada objeto creado a partir de la clase y no son compartidas entre instancias. En este caso:
+
+public int y = 3;
+
+La variable y es una variable de instancia, ya que no tiene el modificador static, lo que significa que cada objeto tendrá su propia copia de y.
+
+==========================================================================
+Salida del programa:
+a.y = 5
+b.y = 6
+a.x = 2
+b.x = 2
+IdentifyMyParts.x = 2

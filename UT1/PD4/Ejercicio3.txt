@@ -1,0 +1,19 @@
+referencias:
+
+students: Sigue apuntando al array de tamaño 10.
+
+students[0]: Sigue apuntando a "Peter Parker", por lo que aún hay una referencia activa a esa cadena.
+
+studentName: Se establece en null, pero esto no afecta a "Peter Parker", ya que sigue referenciado en students[0].
+
+Garbage Collection:
+
+El array students sigue en uso, por lo que no es candidato para recolección de basura.
+
+La cadena "Peter Parker" sigue referenciada en students[0], por lo que no es eliminada.
+
+Si más adelante students[0] = null;, la cadena "Peter Parker" quedaría sin referencias y sería candidata para el garbage collector.
+
+2) Cómo hace un programa para destruir un objeto que ha creado?
+
+Tiene que lograr que nada referencie al objeto

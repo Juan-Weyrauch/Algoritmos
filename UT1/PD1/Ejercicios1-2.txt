@@ -1,0 +1,32 @@
+#### Ejercicio 1
+No, yo pac. \n
+Vos zacata pac. \n
+Yo pac. \n
+
+#### Ejercicio 2
+"sipo ("traqueteo", 13);"
+
+public class Zumbido {
+
+        public static void desconcertar (String dirigible) {
+5)        System.out.println (dirigible);
+6)        sipo ("ping", -5);
+        }
+
+        public static void sipo (String membrillo, int flag) {
+2,7)       if (flag < 0) {
+8)        System.out.println (membrillo + " sup");
+        } else {
+	3)        System.out.println ("ik");
+	4)        desconcertar (membrillo);
+	9)       System.out.println ("muaa-ja-ja-ja");
+	        }
+        }
+
+        public static void main (String[] args) {
+1)   sipo ("traqueteo", 13);
+
+        `}`
+
+`}`
+
