@@ -7,4 +7,4 @@
 ## Why?
 - I've created this repository as an assigment on the subject 'Algoritmos y Estructura de Datos'. 
 
-## Author: Juan Ignacio Weyrauch
+#### Author: Juan Ignacio Weyrauch
