@@ -1,6 +1,6 @@
 # Portafolios Algoritmos y Estructura de Datos
 
-## Purpouse
+## Purpose
 - To upload any and all excercises that I make in the course of the semester that are relevant to this subject. 
 - I will also be uploading information that I consider importart or interesting, and that trully adds value to my formation on this subject. 
 
