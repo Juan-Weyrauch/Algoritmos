@@ -1,0 +1,31 @@
+
+/*
+ * tipo booleano controlCorchotes( de tipo lista de caracteres listaDeEntrada)
+ * 
+ * COM
+ * tipoPila laPila // si usamos pula preexistente debe estar vacia
+ * 
+ * Si listaDeEntrada.vacia
+ *      Devolver error "expresion vacia" // devolver termina
+ * 
+ * AuxLista <- listaDeEntrada.primero
+ * Si AuxLista.Siguiente = nulo devolver FALSO // 1 solo caracter esta mal formada
+ * 
+ * Mientras AuxLista.Siguiente <> nulo
+ *      Si AuxLista.Etiqueta = "("
+ *          Si laPila.Mete(unElementoCualquiera) = FALSO fevlver FALSO //pila llena
+ * 
+ *      SiNo
+ *          Si AuxLista.Etiqueta = ")"
+ *              Si laPila.Saca - nulo devolver FALSO // pila vacia antes de "sacar"
+ * 
+ *      AuxLista <- AuxLista.Siguiente
+ * FinMientras
+ * 
+ * // llegamos al final de la lista de caracteres
+ * 
+ * Si laPila.vacia devolver VERDADERO
+ *      SiNo devolver FALSO
+ * 
+ * FIN
+ */
