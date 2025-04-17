@@ -1,0 +1,7 @@
+El programa cuenta cuantas vocales y consonantes hay en una frase usando la clase enum 'TipoCaracter'.
+TipoCaracter tiene tres categorías: vocal, consonante, otro.
+
+Para poder "preguntarle" a la clase enum que tipo de caracter es necesito separarlo del string, por eso hice la clase Clasificar.
+
+Después en main se recorre cada caracter y para cada uno se invoca la función clasificar y dependiendo de lo que devuelva se incementan los contadores. (si es otra cosa que no sea vocal o consonante se ignora)
+Y cuando el programa termina de leer el string se imprime la cantidad de vocales y consonantes que encontró.
