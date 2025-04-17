@@ -7,13 +7,13 @@ public class area_perimetro {
         System.out.print("Ingrese el radio: ");
         int radio = scanner.nextInt();
         calcular(radio);
-
+        
         scanner.close();
 
     }
 
     public static void calcular(int radio){
-        System.out.println("Radio: " + radio*radio*3.14);
+        System.out.println("Area: " + radio*radio*3.14);
         System.out.println("Perimetro: " + 2*radio*3.14);
     }
 }

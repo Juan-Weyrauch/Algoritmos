@@ -7,22 +7,25 @@ public class Tablero {
 
         System.out.print("Ingrese el largo: ");
         int ancho = scanner.nextInt();
-        System.out.print("Ingrese el ancho: ");
-        int largo = scanner.nextInt();
 
-        imprimirTablero(largo, ancho);
+        imprimirTablero(ancho);
 
         scanner.close();
     }
 
-    public static void imprimirTablero(int largo, int ancho){
-        for (int i = 0; i < largo; i++){
+    public static void imprimirTablero(int ancho){
+        for (int i = 0; i < ancho; i++){
             for (int j = 0; j < ancho; j++){
+                // asi no imprime un " " al final.
+                if (i == ancho) {
+                    System.out.print("#");
+                }
+                else{
                 System.out.print("#");
+                System.out.print(" ");
+                }
             }
             System.out.print("\n");
         }
     }
 }
-
-
