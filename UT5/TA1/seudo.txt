@@ -1,0 +1,94 @@
+Seudocódigo para el UT5 - TA1
+
+Árbol Genérico - Tries
+
+
+a) Descripción en lenguaje natural del algoritmo solicitado
+-----------------------------------------------------------    
+    Se verifica si la raiz del arbol es nula, si no lo es, el método se llama recursivamente en cada nodo par acomprobar si es la etiqueta buscada. Si se encuantra el nodo, se devuelve, sino, el método devuelve nulo.
+
+
+b) Identificación de precondiciones y postcondiciones correspondientes
+---------------------------------------------------------------------
+  Precondiciones:
+    1) La etiqueta tiene que ser valida.
+    2) EL arbol tiene que estar inicializado.
+
+  Postcondiciones:
+    
+    1) Obtener nulo si no se encuentra un nodo con la etiqueta dada.
+    2) Devolver el nodo con la etiqueta.
+
+
+c) Escritura del algoritmo en seudocódigo formal
+------------------------------------------------
+TArbolGenerico(unaEtiqueta)
+  COM
+    Si raiz <> Nulo
+      devolver raiz.Buscar(unaEtiqueta)
+    FinSi
+    devovler Nulo
+  FIN 
+
+
+TNodoArbolGenerico.Buscar(unaEtiqueta)
+  COM
+    Si nodo.etiqueda = unaEtiqueta
+      devolver nodo
+    FinSi
+    unHijo <- primerHijo
+    MIENTRAS unHijo <> Nulo
+      unHijo.Buscar(unaEtiqueta)
+      unHijo <- unHijo.hermanoDerecho
+    FinMientras
+  FIN
+
+d) Análisis detallado del orden del tiempo de ejecución del algoritmo
+---------------------------------------------------------------------
+  Tiempo de ejecución: O(n).
+  Porque en el peor de los casos recorre la totalidad del árbol. 
+
+
+f) Calcular la cantidad de comparaciones en cada caso.
+------------------------------------------------------
+Comparaciones:
+  - Rector: 1 (min)
+  - VICERRECTORÍA DEL MEDIO UNIVERSITARIO: 2
+  - VICERRECTORÍA ACADÉMICA: 3
+  - VICERRECTORÍA ADMINISTRATIVA: 11 (max)
+  - FACULTAD DE CIENCIAS EMPRESARIALES: 4
+  - FACULTAD DE CIENCIAS HUMANAS: 5 
+  - FACULTAD DE INGENIERÍA Y TECNOLOGÍAS: 6
+  - FACULTAD DE PSICOLOGÍA: 10
+  - DEPARTAMENTO DE INFORMÁTICA Y CIENCIAS DE LA COMPUTACIÓN: 7
+  - DEPARTAMENTO DE INGENIERÍA ELÉCTRICA: 8
+  - DEPARTAMENTO DE MATEMÁTICAS: 9
+
+g) Hallar el orden del tiempo de ejecución de cada algoritmo escrito.
+----------------------------------------------------------------------
+  TArbolGenerico(unaEtiqueta)           |
+  COM                                   |
+    Si raiz <> Nulo                     |   O(1)
+      devolver raiz.Buscar(unaEtiqueta) |   O(n)
+    FinSi                               |
+    devovler Nulo                       |
+  FIN                                   |
+
+  -> Por lo tanto: TArbolGenerico(unaEtiqueta) es O(n).
+  
+  
+
+TNodoArbolGenerico.Buscar(unaEtiqueta)  |
+  COM                                   |
+    Si nodo.etiqueda = unaEtiqueta      |
+      devolver nodo                     |
+    FinSi                               |
+    unHijo <- primerHijo                |   O(n)
+    MIENTRAS unHijo <> Nulo             |   O(n)
+      unHijo.Buscar(unaEtiqueta)        |
+      unHijo <- unHijo.hermanoDerecho   |   O(n)
+    FinMientras                         |
+  FIN                                   |
+
+  -> Por lo tanto: TNodoArbolGenerico.Buscar(unaEtiqueta) es o(n)
+
